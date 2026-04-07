@@ -125,7 +125,7 @@ jobs:
     - name: Build main site
       #run: npm run build:cache
       #run: npm run build
-      run: npm run build:baseurl -- --baseURL="${{ steps.pages.outputs.base_url }}/${{ github.event.repository.name }}/"
+      run: npm run build:baseurl --baseURL="${{ steps.pages.outputs.base_url }}/${{ github.event.repository.name }}/"
 
     - name: Cache save
       id: cache-save
