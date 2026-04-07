@@ -3,8 +3,8 @@ copyright = "Copyright © 2022 - 2026 Hinode Team."
 enableGitInfo = true
 
 # additional settings
-baseURL = "/hinode-v2-test-02/"
-canonifyURLs = false
+#baseURL = "/hinode-v2-test-02/"
+canonifyURLs = true
 enableEmoji = true
 enableRobotsTXT = true
 enableInlineShortcodes = true
