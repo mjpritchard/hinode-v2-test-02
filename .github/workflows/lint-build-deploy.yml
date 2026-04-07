@@ -123,7 +123,8 @@ jobs:
       run: npm run env
 
     - name: Build main site
-      run: npm run build:cache
+      #run: npm run build:cache
+      run: npm run build
 
     - name: Cache save
       id: cache-save
@@ -131,7 +132,7 @@ jobs:
       with: 
         path: ${{ env.HUGO_CACHEDIR }}
         key: ${{ steps.cache-restore.outputs.cache-primary-key }}
-        
+
     - name: Upload artifact
       uses: actions/upload-pages-artifact@v3
       with:
